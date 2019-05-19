@@ -446,7 +446,7 @@ class SlashScanner extends CharScannerBase {
                         evaluatedLiterals++;
                     }
                 } catch (e) {
-                    regexErrorReport && console.log("Regex SyntaxError: [%s]", re_literal);
+                    regexErrorReport && console.log("Missdetection of Regex: [%s]", re_literal);
                     return false;
                 }
 
